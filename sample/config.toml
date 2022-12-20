@@ -1,0 +1,26 @@
+[gen]
+
+length = 3
+
+
+[api]
+
+
+[api.rest]
+
+base_url = "https://api.github.com/users/"
+gh_username = ""
+gh_token = ""
+
+log_file = "names.log"
+
+[api.site]
+
+base_url = ""
+cookies = {}
+headers = {}
+content = ""
+
+data_file = "names.log" 
+log_file = "verified_names.log"
+

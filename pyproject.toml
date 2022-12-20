@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gh-loc"
+version = "0.1.0"
+description = ""
+authors = ["1YiB <1yib@proton.me>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fire = "^0.5.0"
+tomli = "^2.0.1"
+ndicts = "^0.1.0"
+ratelimiter = "^1.2.0.post0"
+httpx = "^0.23.1"
+rich = "^12.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+gh-loc = "src.main:app"
